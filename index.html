@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BavyaSri Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    a { color: #38bdf8; text-decoration: none; }
+    .container { max-width: 1100px; margin: auto; padding: 2rem; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 1rem;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    nav a { margin-left: 1.5rem; font-weight: 500; }
+
+    section { margin-top: 4rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1rem; color: #f8fafc; }
+
+    .hero {
+      margin-top: 3rem;
+      max-width: 700px;
+    }
+    .hero h3 { font-size: 1.2rem; color: #38bdf8; }
+    .hero p { margin-top: 1rem; color: #cbd5f5; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+    }
+    .card h3 { margin-bottom: 0.5rem; }
+
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.4rem; }
+
+    footer {
+      margin-top: 4rem;
+      border-top: 1px solid #1e293b;
+      padding: 2rem 0;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    .contact a { display: block; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Kodimyala BavyaSri</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h3>Final-Year CSE Student</h3>
+      <h4>• Python & Data Science Enthusiast • Aspiring AI Engineer</h4>
+      <p>
+        Motivated Computer Science student with hands-on experience in Python, Data Science,
+        and Generative AI. Actively seeking Software Engineering and AI internship
+        opportunities to contribute to real-world, impactful projects.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a final-year Computer Science Engineering student with a strong academic
+        background (CGPA: 9.05) and practical exposure through internships in Data Science,
+        Python development, and Generative AI. I enjoy solving problems, learning new
+        technologies, and building clean, efficient solutions.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AI & Data Science</h3>
+          <ul>
+            <li>NumPy, Pandas, Matplotlib</li>
+            <li>EDA & Data Preprocessing</li>
+            <li>Regression & Classification</li>
+            <li>Prompt Engineering (GenAI)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Web & Tools</h3>
+          <ul>
+            <li>HTML, CSS</li>
+            <li>Streamlit</li>
+            <li>MS Excel, Word, PowerPoint</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Student Performance Analysis</h3>
+          <p>
+            Built a Streamlit-based application to analyze student academic data and
+            predict grades and pass/fail outcomes using Linear and Logistic Regression.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Research Paper Summarization (GenAI)</h3>
+          <p>
+            Used Large Language Models to summarize research papers, extract key concepts,
+            compare methodologies, and automate analysis workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Data Science with Python Intern – EI Systems</h3>
+        <p>May 2025 – July 2025</p>
+        <ul>
+          <li>Completed an 8-week internship covering Python, OOP, and Data Science.</li>
+          <li>Worked on data preprocessing, EDA, and ML model implementation.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="card">
+        <h3>Generative AI Intern – Skillible</h3>
+        <p>July 2024 – August 2024</p>
+        <ul>
+          <li>Learned GenAI fundamentals, limitations, and ethical considerations.</li>
+          <li>Practiced prompt engineering across multiple AI workflows.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <a href="mailto:kodimyalabavyasri@gmail.com">📧 kodimyalabavyasri@gmail.com</a>
+      <a href="tel:+919515674050">📞 +91 9515674050</a>
+      <a href="https://linkedin.com/in/kbavyasri" target="_blank">🔗 LinkedIn Profile</a>
+    </section>
+
+    <footer>
+      © 2026 BavyaSri
+    </footer>
+  </div>
+</body>
+</html>
